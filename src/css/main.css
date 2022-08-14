@@ -27,3 +27,24 @@ abbr[title] {
   font-weight: 600;
   color: #334155;
 }
+
+.hi > a {
+  color: #22d3ee;
+  margin: 0 6px 0 6px;
+  outline: none;
+}
+
+.animated-underline {
+  background-image: linear-gradient(#33333300, #33333300),
+    linear-gradient(to right, #22d3ee, #06b6d4);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  transition-property: background-size, color, background-color, border-color;
+}
+
+.animated-underline:hover,
+.animated-underline:focus-visible {
+  background-size: 0 2px, 100% 2px;
+}
